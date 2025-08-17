@@ -17,10 +17,6 @@ from langchain.document_loaders import TextLoader
 
 
 import pinecone
-PINECONE_API_KEY = "7G0SW3WIlozJq4xEBSGLP8473NBo9eWsX48IO4N5"  # Coherent key (assuming it's the Pinecone API key)
-SRKAR_KEY = "pcsk_4CUNx5_UcD5JvBnujd1UdkGJAFg6LXqim31JRmDquw1jryL392Wg7n7KkJGKFj86mmHW3H"  # Srikar Key (used in code as userdata.get)
-HF_TOKEN = "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"  # Hugging Face API Token
-
 
 # Set your API keys either from environment variables or assign here
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")  # or your actual key string
