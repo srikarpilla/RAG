@@ -13,6 +13,8 @@ from langchain.vectorstores import Pinecone
 from langchain.llms import HuggingFaceHub
 from langchain.chains import RetrievalQA
 from langchain import PromptTemplate
+from langchain.document_loaders import TextLoader
+
 
 import pinecone
 PINECONE_API_KEY = "7G0SW3WIlozJq4xEBSGLP8473NBo9eWsX48IO4N5"  # Coherent key (assuming it's the Pinecone API key)
@@ -89,3 +91,4 @@ qa_chain = RetrievalQA.from_chain_type(
 query = "What is MLOps?"
 answer = qa_chain.run(query)
 print(answer)
+
