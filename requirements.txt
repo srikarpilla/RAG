@@ -1,6 +1,0 @@
-streamlit
-nltk
-PyPDF2
-beautifulsoup4
-scikit-learn
-cohere
